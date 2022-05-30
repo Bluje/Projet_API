@@ -6,6 +6,13 @@ public class Joke {
     private String text;
     private String rating;
 
+    public Joke(Integer id, String title, String text, String rating) {
+        this.id = id;
+        this.title = title;
+        this.text = text;
+        this.rating = rating;
+    }
+
     public Integer getId() {
         return id;
     }
