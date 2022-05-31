@@ -4,9 +4,9 @@ public class Joke {
     private Integer id;
     private String title;
     private String text;
-    private String rating;
+    private Integer rating;
 
-    public Joke(Integer id, String title, String text, String rating) {
+    public Joke(Integer id, String title, String text, Integer rating) {
         this.id = id;
         this.title = title;
         this.text = text;
@@ -37,11 +37,11 @@ public class Joke {
         this.text = text;
     }
 
-    public String getRating() {
+    public Integer getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(Integer rating) {
         this.rating = rating;
     }
 }
