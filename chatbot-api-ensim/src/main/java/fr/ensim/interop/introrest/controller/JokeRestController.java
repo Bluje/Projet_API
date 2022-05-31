@@ -21,10 +21,12 @@ public class JokeRestController {
     static  Map<Integer, Joke> jokes;
     static{
         jokes = new HashMap<>();
-        jokes.put(1, new Joke(1,"Noisette", "Que dit une noisette quand elle tombe dans l’eau ? Je me noix","0/5"));
-        jokes.put(1, new Joke(1, "How do you comfort a JavaScript bug?", "You console it.", "0"));
-        jokes.put(2, new Joke(2, "Why did the child component have such great self-esteem?", "Because its parent kept giving it props!", "0"));
-        jokes.put(3, new Joke(3, "Why do C# and Java developers keep breaking their keyboards", "Because they use a strongly typed language", "0"));
+        jokes.put(1, new Joke(1,"Noisette", "Que dit une noisette quand elle tombe dans l’eau ? Je me noix",2));
+        jokes.put(2, new Joke(2, "Tiers", "Quel est le comble du mathématicien ? C'est de se faire piquer sa moitié par un tiers dans un car.", 8));
+        jokes.put(3, new Joke(3, "Boomerang", "Comment est-ce qu'on appelle un boomerang qui ne revient pas ? Un chat disparu.", 9));
+        jokes.put(4, new Joke(4, "Que dit un homme complexe à une femme réelle", "Viens danser! (dans C)", 10));
+        jokes.put(5, new Joke(5, "Bebe", "Qu'est-ce qui est pire qu'un bébé dans une poubelle ? Un bébé dans deux poubelles.", 5));
+        jokes.put(6, new Joke(6, "Chewing Gum", "Grâce à quoi peut-on enlever le chewing-gum dans les cheveux ? Le cancer.", 8));
     }
     Random generator = new Random();
     Object[] values = jokes.values().toArray();
