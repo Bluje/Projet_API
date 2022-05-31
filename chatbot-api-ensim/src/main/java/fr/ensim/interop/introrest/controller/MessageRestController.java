@@ -26,9 +26,8 @@ public class MessageRestController {
 	
 	//Opérations sur la ressource Message
 
-	@PostMapping("/message/{id}")
-	public ResponseEntity<Message> sendMessage(@PathVariable("id") int id, @RequestBody TextMessage message) throws URISyntaxException {
-
+	@GetMapping("/message/{id}/{text}")
+	public ResponseEntity<Message> sendMessage(@PathVariable("id") int id, @PathVariable("text") String message) throws URISyntaxException {
 		URI uri = new URI(telegramApiUrl + telegramBotId + "/sendMessage?chat_id=" + id + "&text=" + message);
 		System.out.println(uri);
 		RestTemplate restTemplate = new RestTemplate();
